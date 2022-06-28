@@ -1,0 +1,353 @@
+<!doctype html>
+<html>
+<head>
+	<!-- bootstrap.min.css has been minified, meaning all the whitespace and other extra characters have been removed -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Font CSS -->
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<meta charset="UTF-8">
+	<!-- Fit maximum view to the size of the tab in any browser -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Title on tab (tab name) -->	
+	<title>PreUNI</title>
+	<!-- Layout CSS -->
+	<link rel="stylesheet" type="text/css" href="layout.css">
+</head>
+	
+<div id="header">
+	<!-- Title at top of page -->
+		<center>	<h1>PreUNI Course Preferences Test</h1></center>
+	</div>
+	
+<!-- BODY -->
+<body>	
+	<!-- Hide the results at the beginnign -->
+	<div class="container text-center results hide">
+		<p id="results"></p>
+	</div>
+	
+<!-- HOBBIES -->
+<div >
+	<center>
+		<!-- Hobby page layout and style classes -->
+		<div id="hob" class="subtitle container text-center">
+			<h2>Select your preferred hobby in each row:</h2>
+			<h5>Click twice to unselect </h5>
+			<div class="container text-center">
+				<!-- Hobby array and prompts from JS -->
+				<ul id="hobbies" class="list-group">
+				</ul>
+			</div>
+<br>	
+	<!-- Next button to Interest page -->
+	<button id="next-int-btn" class="btn btn-primary btn-lg">Next</button>
+		</div>
+	</center>
+</div>
+	
+<!-- INTERESTS -->
+<div>
+	<center>
+		<!-- Interest page layout and style classes -->
+		<div id="int" class="subtitle container text-center ">
+			<h2>Select your preferred interest in each row:</h2>
+			<h5>Click twice to unselect </h5>
+			<div class="container text-center">
+				<!-- Interest array and prompts from JS -->
+				<ul id="interests" class="list-group">
+				</ul>
+			</div>
+<br>
+	<!-- Back button to Hobby page -->
+	<button id="back-hob-btn" class="btn btn-primary btn-lg">Back</button>
+	<!-- Next button to Interest page -->
+	<button id="next-sub-btn" class="btn btn-primary btn-lg">Next</button>
+		</div>	
+	</center>
+</div>
+	
+<!-- SUBJECTS -->
+<div>
+	<center>
+		<!-- Subject page layout and style classes -->
+		<div id="sub" class="subtitle container text-center">
+			<h2>Select ONLY 5 of your top subjects (in any rows):</h2>
+			<h5>Click twice to unselect </h5>
+			<div class="container text-center">
+				<!-- Subject array and prompts from JS -->
+				<ul id="subjects" class="list-group">
+				</ul>
+			</div>
+<br>	
+	<!-- Back button to Interest page -->
+	<button id="back-int-btn" class="btn btn-primary btn-lg">Back</button>
+	<!-- Submit button to finish -->
+	<button id="submit-btn" class="btn btn-primary btn-lg">Submit</button>
+		</div>
+	</center>
+</div>
+	
+<!-- RESULTS -->
+<!-- Arts Course Results -->
+<center>
+	<div id="Art" class="ans top">
+	<center>
+		<h4> Here are some recommended courses for you based off your results</h4>
+		<h5>Click the logo of a University to find more info </h5>
+		</center>
+		<div class="answers">
+			<h3>Bachelor of Arts: </h3><br>
+				<!-- Tab break spaces -->
+				&nbsp&nbsp&nbsp&nbsp
+				<!-- Course link to UAC website -->
+				<a href="https://www.uac.edu.au/undergraduate/courses/unsw/422000.shtml" target="_blank">
+				<!-- University logo to be the hypermedia -->
+				<img src="https://www.uac.edu.au/course-search/assets/img/UNSW.jpg" alt="UNSW" style="height:40px"></a> &nbsp&nbsp &nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/usyd/513200.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/USYD.jpg" alt="USYD" style="height:40px"></a> &nbsp&nbsp&nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/ws/720510.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/WS.jpg" alt="WSU" style="height:30px"></a> &nbsp&nbsp &nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/uow/753101.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/UOW.jpg" alt="UOW" style="height:40px"></a> &nbsp&nbsp &nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/scu/333100.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/SCU.jpg" alt="SCU" style="height:40px"></a> &nbsp&nbsp &nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/mq/300101.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/MQ.jpg" alt="Macquarie" style="height:40px"></a> &nbsp&nbsp &nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/cqu/160131.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/CQU.jpg" alt="CQU" style="height:40px"></a> &nbsp&nbsp &nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/uon/482010.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/UNE.jpg" alt="UNE" style="height:40px"></a> &nbsp&nbsp &nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/acu/103302.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/ACU.jpg" alt="ACU" style="height:40px"></a>
+
+			<br><hr> <h3>Bachelor of Music: </h3><br>
+				&nbsp&nbsp&nbsp&nbsp<a href="https://www.uac.edu.au/undergraduate/courses/ws/720720.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/WS.jpg" alt="WSU" style="height:30px"></a> &nbsp&nbsp&nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/apply-direct/aim/AUD.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/AIM.jpg" alt="AIM" style="height:40px"></a> &nbsp&nbsp &nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/unsw/422500.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/UNSW.jpg" alt="UNSW" style="height:40px"></a> &nbsp&nbsp &nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/usyd/513400.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/USYD.jpg" alt="USYD" style="height:40px"></a> &nbsp&nbsp &nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/mq/300148.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/MQ.jpg" alt="Macquarie" style="height:40px"></a> &nbsp&nbsp &nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/cqu/160821.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/CQU.jpg" alt="CQU" style="height:40px"></a> &nbsp&nbsp&nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/une/401604.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/UNE.jpg" alt="UNE" style="height:40px"></a> &nbsp&nbsp&nbsp&nbsp		
+			<br><hr> <h3>Bachelor of Performance and Theatre: </h3><br>
+				&nbsp&nbsp&nbsp&nbsp<a href="https://www.uac.edu.au/undergraduate/courses/uow/754825.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/UOW.jpg" alt="UOW" style="height:40px"></a> &nbsp&nbsp&nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/apply-direct/ampa/80.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/AMPA.jpg" alt="AMPA" style="height:40px"></a> &nbsp&nbsp &nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/unsw/421001.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/UNSW.jpg" alt="UNSW" style="height:40px"></a> &nbsp&nbsp &nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/uon/489814.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/UNE.jpg" alt="UNE" style="height:40px"></a> &nbsp&nbsp &nbsp&nbsp		
+			<br><hr><h3>Bachelor of Animation: </h3><br>
+				&nbsp&nbsp&nbsp&nbsp<a href="https://https://www.uac.edu.au/undergraduate/courses/sae/630010.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/SAE.jpg" alt="SAE" style="height:40px"></a> &nbsp&nbsp &nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/apply-direct/aie/10702NAT-AC.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/AIE.jpg" alt="USYD" style="height:40px"></a> &nbsp&nbsp &nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/uts/600035.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/UTS.jpg" alt="UTS" style="height:40px"></a> &nbsp&nbsp&nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/apply-direct/jmc/JMC050.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/JMC.jpg" alt="JMC" style="height:40px"></a> &nbsp&nbsp &nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/tua/551141.shtml"><img src="https://www.uac.edu.au/course-search/assets/img/TUA.jpg" alt="Torrens" style="height:40px"></a> &nbsp&nbsp &nbsp&nbsp
+
+			<br><hr><h3>Bachelor of Fashion and Design: </h3><br>
+				&nbsp&nbsp&nbsp&nbsp<a href="https://www.uac.edu.au/undergraduate/courses/uts/602040.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/UTS.jpg" alt="UTS" style="height:40px"></a> &nbsp&nbsp &nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/unsw/421100.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/UNSW.jpg" alt="UNSW" style="height:40px"></a> &nbsp&nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/tua/550106.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/TUA.jpg" alt="Torrens" style="height:40px"></a> &nbsp&nbsp &nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/icms/530019.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/ICMS.jpg" alt="ICMS" style="height:40px"></a> &nbsp&nbsp  &nbsp
+			</div>
+		<!-- Email display -->
+		<div class="email hide"><label style="color:white"> Send a copy of your results to your email:  </label>
+		<!-- Input email box -->  <!-- Placeholder, is what appears in the input box, until an input is entered -->
+		<input type="email" placeholder="Enter email address"/><button class="email-btn btn btn-primary btn-lg">Enter</button> <br>
+		</div>	
+	</div>
+</center>
+
+<!-- Commerce Course Results-->
+<center>
+	<div id="Com" class="ans top">
+	<center>
+		<h4> Here are some recommended courses for you based off your results</h4>
+		<h5>Click the logo of a University to find more info </h5>
+		</center>
+		<div class="answers">
+			<h3>Bachelor of Commerce: </h3><br>
+				&nbsp&nbsp&nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/acu/103701.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/ACU.jpg" alt="ACU" style="height:40px"></a>&nbsp&nbsp &nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/unsw/424000.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/UNSW.jpg" alt="UNSW" style="height:40px"></a> &nbsp&nbsp &nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/anu/133003.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/ANU.jpg" alt="ANU" style="height:40px"></a> &nbsp&nbsp&nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/uon/482300.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/UNE.jpg" alt="UNE" style="height:40px"></a> &nbsp&nbsp &nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/usyd/513300.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/USYD.jpg" alt="USYD" style="height:40px"></a> &nbsp&nbsp &nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/unda/650040.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/UNDA.jpg" alt="UNDA" style="height:40px"></a> &nbsp&nbsp &nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/mq/300221.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/MQ.jpg" alt="Macquarie" style="height:40px"></a> &nbsp&nbsp &nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/ltu/197445.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/LTU.jpg" alt="LTU" style="height:30px"></a> &nbsp&nbsp &nbsp&nbsp
+
+
+
+			<br><hr> <h3>Bachelor of Business: </h3><br>
+				&nbsp&nbsp&nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/uts/601030.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/UTS.jpg" alt="UTS" style="height:40px"></a> &nbsp&nbsp &nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/ws/721005.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/WS.jpg" alt="WSU" style="height:30px"></a> &nbsp&nbsp&nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/uow/751237.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/UOW.jpg" alt="UOW" style="height:40px"></a> &nbsp&nbsp&nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/unsw/450010.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/UNSW.jpg" alt="UNSW" style="height:40px"></a> &nbsp&nbsp &nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/ltu/196000.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/LTU.jpg" alt="LTU" style="height:30px"></a> &nbsp&nbsp &nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/tua/550010.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/TUA.jpg" alt="Torrens" style="height:40px"></a> &nbsp&nbsp &nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/une/395676.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/UNE.jpg" alt="UNE" style="height:40px"></a> &nbsp&nbsp&nbsp&nbsp		
+
+			<br><hr> <h3>Bachelor of Media and Communications: </h3><br>
+				&nbsp&nbsp&nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/une/391640.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/UNE.jpg" alt="UNE" style="height:40px"></a> &nbsp&nbsp&nbsp&nbsp		
+				<a href="https://www.uac.edu.au/undergraduate/courses/scu/333103.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/SCU.jpg" alt="SCU" style="height:40px"></a> &nbsp&nbsp &nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/unsw/422700.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/UNSW.jpg" alt="UNSW" style="height:40px"></a> &nbsp&nbsp &nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/ltu/197500.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/LTU.jpg" alt="LTU" style="height:30px"></a> &nbsp&nbsp &nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/mq/302164.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/MQ.jpg" alt="Macquarie" style="height:40px"></a> &nbsp&nbsp &nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/uts/609032.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/UTS.jpg" alt="UTS" style="height:40px"></a> &nbsp&nbsp &nbsp		
+
+			<br><hr><h3>Bachelor of Law: </h3><br>
+				&nbsp&nbsp&nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/mq/300160.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/MQ.jpg" alt="Macquarie" style="height:40px"></a> &nbsp&nbsp &nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/ws/725005.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/WS.jpg" alt="WSU" style="height:30px"></a> &nbsp&nbsp&nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/uts/604000.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/UTS.jpg" alt="UTS" style="height:40px"></a> &nbsp&nbsp &nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/acu/107000.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/ACU.jpg" alt="ACU" style="height:40px"></a>&nbsp&nbsp &nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/scu/336166.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/SCU.jpg" alt="SCU" style="height:40px"></a> &nbsp&nbsp &nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/cqu/160081.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/CQU.jpg" alt="CQU" style="height:40px"></a> &nbsp&nbsp&nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/anu/137004.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/ANU.jpg" alt="ANU" style="height:40px"></a> &nbsp&nbsp&nbsp&nbsp
+
+			<br><hr><h3>Bachelor of Accounting: </h3><br>
+				&nbsp&nbsp&nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/ltu/196105.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/LTU.jpg" alt="LTU" style="height:30px"></a> &nbsp&nbsp &nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/anu/133503.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/ANU.jpg" alt="ANU" style="height:40px"></a> &nbsp&nbsp&nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/icms/530004.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/ICMS.jpg" alt="ICMS" style="height:40px"></a> &nbsp&nbsp  &nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/unda/650240.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/UNDA.jpg" alt="UNDA" style="height:40px"></a> &nbsp&nbsp &nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/cqu/160020.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/CQU.jpg" alt="CQU" style="height:40px"></a> &nbsp&nbsp&nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/une/395664.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/UNE.jpg" alt="UNE" style="height:40px"></a> &nbsp&nbsp&nbsp&nbsp		
+				<a href="https://www.uac.edu.au/undergraduate/courses/uts/601010.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/UTS.jpg" alt="UTS" style="height:40px"></a> &nbsp&nbsp &nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/ws/721070.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/WS.jpg" alt="WSU" style="height:30px"></a> &nbsp&nbsp&nbsp&nbsp
+		</div>
+		<div class="email hide"><label style="color:white"> Send a copy of your results to your email:  </label>
+		<input type="email" placeholder="Enter email address"/><button class="email-btn btn btn-primary btn-lg">Enter</button> <br>
+		</div>	
+	</div>
+</center>
+
+<!-- Engineering  Course Results-->
+<center>
+	<div id="Eng" class="ans top">
+	<center>
+		<h4> Here are some recommended courses for you based off your results</h4>
+		<h5>Click the logo of a University to find more info </h5>
+		</center>
+		<div class="answers">
+		<h3>Bachelor of Computer Science: </h3><br>
+				&nbsp&nbsp&nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/ws/724000.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/WS.jpg" alt="WSU" style="height:30px"></a> &nbsp&nbsp&nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/unsw/425800.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/UNSW.jpg" alt="UNSW" style="height:40px"></a> &nbsp&nbsp &nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/uow/754100.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/UOW.jpg" alt="UOW" style="height:40px"></a> &nbsp&nbsp&nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/usyd/513505.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/USYD.jpg" alt="USYD" style="height:40px"></a> &nbsp&nbsp &nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/une/392624.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/UNE.jpg" alt="UNE" style="height:40px"></a> &nbsp&nbsp&nbsp&nbsp		
+
+			<br><hr> <h3>Bachelor of Engineering: </h3><br>
+				&nbsp&nbsp&nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/uts/603141.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/UTS.jpg" alt="UTS" style="height:40px"></a> &nbsp&nbsp &nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/scu/334115.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/SCU.jpg" alt="SCU" style="height:40px"></a> &nbsp&nbsp&nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/unsw/425000.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/UNSW.jpg" alt="UNSW" style="height:40px"></a> &nbsp&nbsp &nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/ltu/187495.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/LTU.jpg" alt="LTU" style="height:30px"></a> &nbsp&nbsp 		<a href="https://www.uac.edu.au/undergraduate/courses/uow/751609.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/UOW.jpg" alt="UOW" style="height:40px"></a> &nbsp&nbsp&nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/mq/300582.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/MQ.jpg" alt="Macquarie" style="height:40px"></a> &nbsp&nbsp &nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/ws/722503.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/WS.jpg" alt="WSU" style="height:30px"></a> &nbsp&nbsp&nbsp&nbsp
+
+			<br><hr> <h3>Bachelor of Architecture: </h3><br>
+				&nbsp&nbsp&nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/mq/300141.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/MQ.jpg" alt="Macquarie" style="height:40px"></a> &nbsp&nbsp &nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/une/391647.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/UNE.jpg" alt="UNE" style="height:40px"></a>
+				<a href="https://www.uac.edu.au/undergraduate/courses/uts/609556.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/UTS.jpg" alt="UTS" style="height:40px"></a> &nbsp&nbsp &nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/unsw/423500.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/UNSW.jpg" alt="UNSW" style="height:40px"></a> &nbsp&nbsp &nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/usyd/513115.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/USYD.jpg" alt="USYD" style="height:40px"></a> &nbsp&nbsp &nbsp&nbsp
+
+			<br><hr><h3>Bachelor of Information Systems / Technology: </h3><br>
+				&nbsp&nbsp&nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/acu/103708.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/ACU.jpg" alt="ACU" style="height:40px"></a>
+				<a href="https://www.uac.edu.au/undergraduate/courses/uts/603210.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/UTS.jpg" alt="UTS" style="height:40px"></a> &nbsp&nbsp &nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/ws/724008.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/WS.jpg" alt="WSU" style="height:30px"></a> &nbsp&nbsp&nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/uow/754300.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/UOW.jpg" alt="UOW" style="height:40px"></a> &nbsp&nbsp &nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/unsw/424500.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/UNSW.jpg" alt="UNSW" style="height:40px"></a> &nbsp&nbsp &nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/tua/553011.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/TUA.jpg" alt="Torrens" style="height:40px"></a> &nbsp&nbsp &nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/anu/136063.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/ANU.jpg" alt="ANU" style="height:40px"></a> &nbsp&nbsp&nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/uon/483000.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/UON.jpg" alt="UON" style="height:40px"></a> &nbsp&nbsp&nbsp&nbsp		
+
+			<br><hr><h3>Bachelor of Data Science: </h3><br>
+				&nbsp&nbsp&nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/uts/603060.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/UTS.jpg" alt="UTS" style="height:40px"></a> &nbsp&nbsp &nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/ws/723980.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/WS.jpg" alt="WSU" style="height:30px"></a> &nbsp&nbsp&nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/mit/570125.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/MIT.jpg" alt="MIT" style="height:40px"></a> &nbsp&nbsp &nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/uon/489791.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/UON.jpg" alt="UON" style="height:40px"></a> &nbsp&nbsp  &nbsp		
+				<a href="https://www.uac.edu.au/undergraduate/courses/anu/135801.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/ANU.jpg" alt="ANU" style="height:40px"></a> &nbsp&nbsp&nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/unsw/429150.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/UNSW.jpg" alt="UNSW" style="height:40px"></a> &nbsp&nbsp &nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/uow/756522.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/UOW.jpg" alt="UOW" style="height:40px"></a> &nbsp&nbsp&nbsp&nbsp
+
+		</div>
+		<div class="email hide"><label style="color:white"> Send a copy of your results to your email:  </label>
+		<input type="email" placeholder="Enter email address"/><button  class="email-btn btn btn-primary btn-lg">Enter</button> <br>
+		</div>	
+	</div>
+</center>
+
+<!-- Medicine Course Results -->
+<center>
+	<div id="Med" class="ans top">
+	<center>
+		<h4> Here are some recommended courses for you based off your results</h4>
+		<h5>Click the logo of a University to find more info </h5>
+		</center>
+		<div class="answers">
+		<h3>Bachelor of Science: </h3><br>
+				&nbsp&nbsp&nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/ws/728167.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/WS.jpg" alt="WSU" style="height:30px"></a> &nbsp&nbsp&nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/unsw/429000.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/UNSW.jpg" alt="UNSW" style="height:40px"></a> &nbsp&nbsp &nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/uow/757621.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/UOW.jpg" alt="UOW" style="height:40px"></a> &nbsp&nbsp&nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/usyd/513910.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/USYD.jpg" alt="USYD" style="height:40px"></a> &nbsp&nbsp &nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/cdu/590570.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/CDU.jpg" alt="CDU" style="height:40px"></a> &nbsp&nbsp &nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/mq/300555.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/MQ.jpg" alt="Macquarie" style="height:40px"></a> &nbsp&nbsp &nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/cqu/160411.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/CQU.jpg" alt="CQU" style="height:40px"></a> &nbsp&nbsp&nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/une/392603.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/UNE.jpg" alt="UNE" style="height:40px"></a> &nbsp&nbsp&nbsp&nbsp		
+				<a href="https://www.uac.edu.au/undergraduate/courses/anu/138003.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/ANU.jpg" alt="ANU" style="height:40px"></a> &nbsp&nbsp&nbsp&nbsp
+
+			<br><hr> <h3>Bachelor of Education: </h3><br>
+				&nbsp&nbsp&nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/uon/484800.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/UON.jpg" alt="UON" style="height:40px"></a> &nbsp&nbsp &nbsp&nbsp<a href="" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/UTS.jpg" alt="UTS" style="height:40px"></a> &nbsp&nbsp &nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/scu/331118.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/SCU.jpg" alt="SCU" style="height:30px"></a> &nbsp&nbsp 		<a href="" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/UOW.jpg" alt="UOW" style="height:40px"></a> &nbsp&nbsp&nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/ltu/189985.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/LTU.jpg" alt="LTU" style="height:40px"></a> &nbsp&nbsp &nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/acu/101124.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/ACU.jpg" alt="ACU" style="height:40px"></a> &nbsp&nbsp &nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/ws/729027.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/MQ.jpg" alt="Macquarie" style="height:40px"></a> &nbsp&nbsp &nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/une/396759.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/UNE.jpg" alt="UNE" style="height:40px"></a>
+
+
+			<br><hr> <h3>Bachelor of Medicine: </h3><br>
+				&nbsp&nbsp&nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/csu/725505.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/CSU.jpg" alt="CSU" style="height:30px"></a> &nbsp&nbsp &nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/ws/725505.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/WS.jpg" alt="WSU" style="height:30px"></a> &nbsp&nbsp&nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/uts/607058.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/UTS.jpg" alt="UTS" style="height:40px"></a> &nbsp&nbsp &nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/uts/607058.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/ACU.jpg" alt="ACU" style="height:40px"></a> &nbsp&nbsp 		<a href="" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/UOW.jpg" alt="UOW" style="height:40px"></a> &nbsp&nbsp&nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/usyd/513715.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/USYD.jpg" alt="USYD" style="height:40px"></a> &nbsp&nbsp &nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/tua/552060.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/TUA.jpg" alt="Torrens" style="height:40px"></a> &nbsp&nbsp &nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/une/785000.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/UNE.jpg" alt="UNE" style="height:40px"></a>
+
+			<br><hr><h3>Bachelor of Nursing: </h3><br>
+				&nbsp&nbsp&nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/uc/365101.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/UC.jpg" alt="UC" style="height:30px"></a> &nbsp&nbsp &nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/ws/726550.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/WS.jpg" alt="WSU" style="height:30px"></a> &nbsp&nbsp&nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/uon/483600.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/UON.jpg" alt="UON" style="height:40px"></a> &nbsp&nbsp &nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/uow/757111.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/UOW.jpg" alt="UOW" style="height:40px"></a> &nbsp&nbsp&nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/csu/214651.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/CSU.jpg" alt="CSU" style="height:40px"></a> &nbsp&nbsp &nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/scu/335101.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/SCU.jpg" alt="SCU" style="height:40px"></a> &nbsp&nbsp &nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/une/396665.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/UNE.jpg" alt="UNE" style="height:40px"></a>	&nbsp&nbsp&nbsp&nbsp		
+				<a href="https://www.uac.edu.au/undergraduate/courses/acu/105518.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/ACU.jpg" alt="ACU" style="height:40px"></a> &nbsp&nbsp&nbsp&nbsp
+
+			<br><hr><h3>Bachelor of Pharmacy: </h3><br>
+				&nbsp&nbsp&nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/gu/283327.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/GU.jpg" alt="GU" style="height:40px"></a> &nbsp&nbsp &nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/uon/483800.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/UON.jpg" alt="UON" style="height:40px"></a> &nbsp&nbsp &nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/uts/607051.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/UTS.jpg" alt="UTS" style="height:30px"></a> &nbsp&nbsp 		<a href="" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/UOW.jpg" alt="UOW" style="height:40px"></a> &nbsp&nbsp&nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/usyd/513761.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/USYD.jpg" alt="USYD" style="height:40px"></a> &nbsp&nbsp &nbsp&nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/csu/214808.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/CSU.jpg" alt="CSU" style="height:40px"></a> &nbsp&nbsp &nbsp
+				<a href="https://www.uac.edu.au/undergraduate/courses/une/392612.shtml" target="_blank"><img src="https://www.uac.edu.au/course-search/assets/img/UNE.jpg" alt="UNE" style="height:40px"></a> &nbsp&nbsp&nbsp&nbsp		
+		</div>	
+		<div class="email hide"><label style="color:white"> Send a copy of your results to your email:  </label>
+		<input type="email" placeholder="Enter email address"/><button class="email-btn btn btn-primary btn-lg">Enter</button> <br>
+		</div>	
+	</div>
+</center>
+
+<div class="container text-center bottom">	
+	<!-- Retake button to reload the page -->
+	<button id="retake-btn" class="hide btn btn-primary btn-lg">Retake Quiz</button>
+</div>
+<!-- JQUERY JS - it makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers.-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
+
+</body>
+
+</html>

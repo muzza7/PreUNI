@@ -1,0 +1,55 @@
+@charset "UTF-8";
+*{
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	
+}
+/* "PreUNI Course..." Title text style*/
+h1 {
+	color: #4A8DEA;
+	text-shadow: 4px 3px 9px  black;
+	font-family: adorn-condensed-sans,sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 300%;
+	align-content: center;	
+}
+/* "Select your..." text style*/
+h2{
+	color: aliceblue;
+}
+/* "Bachelor of..." text style*/
+h3{
+	color: #4A8DEB;
+	font-size: 20px;
+	align-content: left;
+}
+/* Paragraph form style*/
+p{
+	padding: 0em;
+	margin: 0em;
+}
+/* "Here are some recommended..." text style*/
+h4{
+	color: white;
+	font-size: 30px;
+	align-content: center;
+	margin: 0;
+	padding: 0;
+}
+/* "Click twice... / Click logo..." text style*/
+h5{
+	color: #50ACBF;
+	font-size: 25px;
+	align-content: center;
+}
+/* Un-ordered list style*/
+ul{
+	display: inline;
+	list-style-type: circle;
+}
+/* Page line style*/
+hr {
+  border: 1px solid #4A8DEB;
+  margin-bottom: 25px;
+}

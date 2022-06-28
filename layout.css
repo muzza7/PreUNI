@@ -1,0 +1,182 @@
+@charset "UTF-8";
+/* Font CSS: */
+@import url("https://use.typekit.net/fiu8uzx.css");
+/* CSS Page with text styles: */
+@import url("style.css");
+/* CSS Document */
+
+/* Body of html form style*/
+body{
+	float: center;
+	background-image: url("blue-grad-background.jpg");
+	background-position: top;
+	background-size:cover;
+	margin-top: 1em;
+	padding-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+/* Header form style*/
+#header {
+	padding: 1em;
+	padding-bottom: 0em;
+	width: 100%;
+	background-position: top;
+	background-size: auto;
+
+}
+/* Prompts form style*/
+.prompt {
+	display: block;
+	font-size: 20px;
+	
+}
+/* All buttons form style*/
+.btn {
+	margin: 0 20px 0 20px;
+}
+/* Art (A) button form style*/
+.btn-art {
+	color: #109D9A;
+	font-weight: bold;
+	display: inline;
+}
+/* Art (A) button form style when interacted with user*/
+.btn-art.active,
+.btn-art:active,
+.btn-art:focus,
+.btn-art:active:focus,
+.btn-art:focus,
+.btn-art:hover
+ {
+	background-color: #7BD6D4;
+}
+/* Commerce (B) button form style*/
+.btn-com {
+	color: #4E569C;
+	display: inline;
+}
+/* Commerce (B) button form style when interacted with user*/
+.btn-com.active,
+.btn-com:active,
+.btn-com:focus,
+.btn-com:active:focus,
+.btn-com.active:focus,
+.btn-com:hover {
+	background-color: #9E9BCC;
+}
+/* Engineering (C) button form style*/
+.btn-eng {
+	color: #533B73;
+	display: inline;
+}
+/* Engineering (C) button form style when interacted with user*/
+.btn-eng.active,
+.btn-eng:active,
+.btn-eng:focus,
+.btn-eng:active:focus,
+.btn-eng.active:focus,
+.btn-eng:hover {
+	background-color: #977BB8;
+}
+/* Medicine (D) button form style*/
+.btn-med {
+	color: #132381;
+	font-weight: bold;
+	display: inline;
+}
+/* Medicine (D) button form style when interacted with user*/
+.btn-med.active,
+.btn-med:active,
+.btn-med:focus,
+.btn-med:active:focus,
+.btn-med.active:focus,
+.btn-med:hover {
+	background-color: #8896ED;
+}
+/* Bottom of page form style */
+.bottom {
+	margin-bottom: 100px;
+}
+/* Class to remove div*/
+.hide {
+	display: none;
+}
+/* Class to show div*/
+.show {
+	display: block;
+}
+
+/* Results container position form style */
+.results {
+	margin-bottom: 40px;
+	margin-top: 40px;
+}
+/* Background square container position form style */
+.container {
+	position: center;
+	align-content: center;
+	margin-top: 0em;
+	padding-top: 0em;
+}
+/* Hobby back soft colour sqare form style */
+#hob {
+	float: center;
+	margin-top: -5em;
+	margin: 2em;
+	padding-top: -10em;
+	padding-bottom: 1em;
+	width: 90%;
+	background-color: hsla(246,53%,29%,0.44);
+	height: auto;
+	align-content: center;
+}
+/* Interest back soft colour sqare form style */
+#int {
+	float: center;
+	margin-top: -5em;
+	margin: 2em;
+	padding-top: -10em;
+	padding-bottom: 1em;
+	width: 90%;
+	background-color: hsla(206,65%,41%,0.34);
+	height: auto;
+	align-content: center;
+}
+/* Subject back soft colour sqare form style */
+#sub {
+	float: center;
+	margin-top: -5em;
+	margin: 2em;
+	padding-top: -10em;
+	padding-bottom: 1em;
+	width: 90%;
+	background-color: hsla(179,52%,39%,0.38);
+	height: auto;
+}
+/* Results, white container form style */
+.answers {
+	margin-top: 0em;
+	margin: 2em;
+	padding-top: 0.5em;
+	padding-right: 3em;
+	padding-left: 3em;
+	padding-bottom: 2em;
+	width: auto;
+	background-color: white;
+	height: auto;
+	align-content: left;
+	align-items: left;
+}
+/* Results back soft colour sqare form style */
+.ans {
+	float: center;
+	align-content: center;
+	margin-top: -5em;
+	margin: 2em;
+	padding-top: 2em;
+	padding-bottom: 1em;
+	width: 90%;
+	background-color: hsla(246,53%,29%,0.44);
+	height: auto;
+}
