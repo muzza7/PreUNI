@@ -328,10 +328,6 @@ $('.value-btn').mousedown(function () {
 	var this_group3 = classArr3[0];	
 	if($(this).hasClass('active')) {
 		$(this).removeClass('active');
-		
-		// Keep a running total of the values they have selected. If the total is negative, the user is introverted. If positive, user is extroverted.
-		// Calculation will sum all of the answers to the prompts using weight of the value * the weight of the prompt.
-
 		total -= (findWeight(subject_prompt_values, $(this).text()));
 	} else {
 		total -= (findWeight(subject_prompt_values, $('.'+this_group3+'.active').text()));
